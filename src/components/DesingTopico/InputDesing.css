@@ -1,0 +1,13 @@
+.custom-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .custom-input:focus {
+    border-color: #007bff;
+  }
+  
