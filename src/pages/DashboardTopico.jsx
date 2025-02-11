@@ -1,4 +1,4 @@
-import { ContentDashboard } from "../components"
+import { ContentDashboard} from "../components"
 
 {/*Victor */}
  
