@@ -38,6 +38,7 @@ p {
     display: flex;
     align-items: center;
     padding: 16px;
+    gap: 50px;
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.2);
@@ -61,21 +62,18 @@ p {
 }
 
 
-/* 🏷️ Títulos */
+/* Títulos */
 .stat-title {
-    text-decoration-line: overline;
+    text-decoration-line: underline;
     color: white;
 }
 
 /*  Valores */
 .stat-value {
-    color: black;
-    text-align: center;
+    color: white;
 }
 
-.div-stat-value{
-align-content: center;
-}
+
 
 /*  Ícono */
 .stat-icon svg {
@@ -90,5 +88,6 @@ align-content: center;
     box-shadow: 0px 0px 15px 5px rgba(151, 176, 173, 0.5);
     transform: scale(1.10);
     color: whitesmoke;
+    text-size-adjust: 30px;
 }
 

@@ -28,10 +28,8 @@ export const ContentDashboard = () => {
             <div key={index} className={`stat-card ${stat.className}`}>
               <div className="stat-icon">{stat.icono}</div>
               <div>
-                <p className="stat-title">{stat.title}</p>
-                <div className = "div-stat-value">
+                <h2 className="stat-title">{stat.title}</h2>
                 <p className="stat-value">{stat.value}</p>
-                </div>
               </div>
             </div>
           ))}
