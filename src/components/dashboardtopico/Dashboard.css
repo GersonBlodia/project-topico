@@ -5,16 +5,21 @@ body {
 }
 
 .dashboard-container {
-    padding: auto;
+    display: grid;
+    padding: 20px;
     max-width: 1200px;
     margin: auto;
 }
 
 .cards-container {
+    display:flex;
+    width: 50%;
     padding: 20px;
+    padding-left: 40px;
+    margin: 20px auto;
     border-radius: 20px;
-    box-shadow: 0px 2px 5px rgba(10, 10, 10, 0.21);
-    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.2);
 }
 
 h1 {
@@ -36,9 +41,10 @@ p {
 
 .stat-card {
     display: flex;
+    position: relative;
     align-items: center;
     padding: 16px;
-    gap: 50px;
+    gap: 20px;
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.2);
@@ -46,20 +52,42 @@ p {
 }
 
 .card1 {
-    background: linear-gradient(150deg, #16a1cc, #9F00FF, #D896FF);
+    background: linear-gradient(150deg, #cc2b16, #9F00FF, #9699ff);
 }
 
 .card2 {
-    background: linear-gradient(150deg, #16a1cc, #bfb6c8, #D896FF);
+    background: linear-gradient(150deg, #cc2b16, #9F00FF, #9699ff);
 }
 
 .card3 {
-    background: linear-gradient(135deg, #11998e, #38ef7d);
+    background: linear-gradient(150deg, #cc2b16, #9F00FF, #9699ff);
 }
 
 .card4 {
-    background: linear-gradient(150deg, #f51f08, #ff8e4d, #ffa200);
+    background: linear-gradient(150deg, #cc2b16, #9F00FF, #9699ff);
 }
+
+.stats-div {
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+
+.stat-button {
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    border: none; /* Elimina cualquier borde */
+    outline: none; /* Evita el borde al hacer clic */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.2);
+    padding: 10px 24px;  /* Más grande horizontal y verticalmente */
+    font-size: 16px;  /* Aumentar tamaño del texto */
+}
+
+.stat-button:hover {
+    box-shadow: 0 0 50px white;
+}
+
 
 
 /* Títulos */
@@ -72,8 +100,6 @@ p {
 .stat-value {
     color: white;
 }
-
-
 
 /*  Ícono */
 .stat-icon svg {
