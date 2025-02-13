@@ -2,7 +2,7 @@
  
 import { ItemPaciente } from "./ItemPaciente";
  
-export const ContainerTable=({data})=>{
+export const ContainerTable=({data,onEdit,onDelete})=>{
    
      return(
         <div className="table-container">
@@ -20,7 +20,9 @@ export const ContainerTable=({data})=>{
             {data.map((row, index) => (
                 <ItemPaciente
                   key={row.id}
-                  {...row}
+                  row={row}
+                  onEdit={onEdit}
+                  onDelete={onDelete}
                 />
             ))}
           </tbody>

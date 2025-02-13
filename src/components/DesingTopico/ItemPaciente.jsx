@@ -1,6 +1,6 @@
 import { ClipboardPlus, PenSquare, Trash2 } from "lucide-react"
 
-export const ItemPaciente=(row)=>{
+export const ItemPaciente=({onDelete,onEdit, row})=>{
        return(
         <tr key={row.id}>
         <td>{`${row.nombre} ${row.apellido}`}</td>
@@ -8,12 +8,8 @@ export const ItemPaciente=(row)=>{
         <td>{row.fechaAtencion}</td>
         <td>
           <div className="actions">
-            <button className="edit-button">
-              <PenSquare size={16} />
-            </button>
-            <button className="delete-button">
-              <Trash2 size={16} />
-            </button>
+          <button className="edit-button" onClick={() => onEdit(row)}>✏️ Editar</button>
+          <button className="delete-button" onClick={() => onDelete(row.id)}>🗑️ Eliminar</button>
             <button className="primary-button">
               <ClipboardPlus size={16} />
             </button>
